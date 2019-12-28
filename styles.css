@@ -1,6 +1,5 @@
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
-
 /*
 COLORS
 H1, Get answer button, text in input field: #2B4E80;
@@ -11,32 +10,32 @@ clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
 * {
+  background-color: inherit;
+  border: none;
   margin: 0;
   padding: 0;
-  border: none;
-  background-color: inherit;
 }
 
 main {
-  display: flex;
-  padding: 1%;
-  justify-content: center;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
 }
 
 h1 {
+  color: #2B4E80;
   font-family: 'Life Savers', 'cursive';
   font-size: 3em;
-  text-align:center;
-  color: #2B4E80;
+  text-align: center;
 }
 
 .eight-ball-box {
-  display: flex;
-  background: #E6ECF4;
-  justify-content: flex-start;
-  flex-direction: column;
   align-items: center;
+  background: #E6ECF4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 img {
@@ -44,25 +43,25 @@ img {
 }
 
 .eight-ball {
-  width: 35%;
   height: 35%;
   margin: 18%;
+  width: 35%;
 }
 
 .eight-ball-box,
 .woody {
   height: 400px;
-  width: 400px;
-  padding: 15px
+  padding: 15px;
+  width: 400px
 }
 
 .question-button-input {
-  width: 100%;
-  text-align: center;
-  margin: .5%;
-  font-size: 1.5em;
   display: block;
+  font-size: 1.5em;
+  margin: .5%;
   padding: 1% 0;
+  text-align: center;
+  width: 100%;
 }
 
 p {
@@ -86,8 +85,8 @@ button {
 }
 
 .clear-button {
-  background: #DE4841;
   align-self: flex-end;
+  background: #DE4841;
   font-size: 1.5em;
   padding: 1% 1.5%;
 }
