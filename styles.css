@@ -10,3 +10,88 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
+main {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Life Savers', 'cursive';
+  font-size: 3em;
+  text-align:center;
+  color: #2B4E80;
+}
+
+.eight-ball-box {
+  display: flex;
+  background: #E6ECF4;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: block;
+}
+
+.eight-ball {
+  width: 35%;
+  height: 35%;
+  margin: 18%;
+}
+
+.eight-ball-box,
+.woody {
+  height: 400px;
+  width: 400px;
+  padding: 15px
+}
+
+.question-button-input {
+  width: 100%;
+  text-align: center;
+  margin: .5%;
+  font-size: 1.5em;
+  display: block;
+  padding: 1% 0;
+}
+
+p {
+  background-color: white;
+}
+
+button {
+  color: white;
+}
+
+.question-button {
+  background-color: #2B4E80;
+}
+
+.question-button:disabled {
+  background-color: #607AA0;
+}
+
+.question-button:hover:enabled {
+  background-color: #1C3455;
+}
+
+.clear-button {
+  background: #DE4841;
+  align-self: flex-end;
+  font-size: 1.5em;
+  padding: 1% 1.5%;
+}
+
+.clear-button {
+  background: #D0CDCD;
+}
