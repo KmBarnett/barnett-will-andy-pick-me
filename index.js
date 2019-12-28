@@ -21,23 +21,28 @@ function clickHandler() {
 
 function runAnswer(eightBallDisplay) {
   eightBall.style.display = eightBallDisplay
-  showQuestionAnswer()
+  if (eightBallDisplay === 'none') {
+    showQuestionAnswer()
+  } else {
+    showQuestionAnswer(' ')
+  }
   inputQuestion.value = ''
   enableButtons()
 }
 
-function showQuestionAnswer() {
-  dipslayQuestion.innerText = `"${inputQuestion.value}"`
-  displayAnwser.innerText = randomAwnser()
+function showQuestionAnswer(clear) {
+  dipslayQuestion.innerText = clear || `"${inputQuestion.value}"`
+  displayAnwser.innerText = clear || randomAwnser()
 }
 
 function enableButtons() {
   if (inputQuestion.value.length > 3) {
-    clearButton.removeAttribute('disabled')
     getAnswerButton.removeAttribute('disabled')
+  } else if (displayAnwser.innerText !== '') {
+    clearButton.removeAttribute('disabled')
+    getAnswerButton.setAttribute('disabled', true)
   } else {
     clearButton.setAttribute('disabled', true)
-    getAnswerButton.setAttribute('disabled', true)
   }
 }
 
