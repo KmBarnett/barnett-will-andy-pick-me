@@ -12,12 +12,14 @@
   <h1>Will Andy Pick Me</h1>
   <main>
     <section class="eight-ball-box">
-      <p class="question-button-input question-input" contenteditable="true">Ask Your Question Here</p>
-      <button disabled class="question-button question-button-input" type="button">Get your Answer</button>
+      <input type="text" placeholder="Ask Your Question Here" class="question-button-input question-input-js question-input">
+      <button disabled class="question-button question-button-js question-button-input" type="button">Get your Answer</button>
       <div class="answer-container">
-        <img class="eight-ball" src="assets/eight-ball.png" alt="eight-ball">
+        <img class="eight-ball eight-ball-js" src="assets/eight-ball.png" alt="eight-ball">
+        <p class="question-js"></p>
+        <h2 class="awnser-js"></h2>
       </div>
-      <button disabled class="clear-button" type="button">Clear</button>
+      <button disabled class="clear-button clear-button-js" type="button">Clear</button>
     </section>
     <img class="woody" src="assets/woody.png" alt="woody">
   </main>
